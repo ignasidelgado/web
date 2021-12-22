@@ -4,20 +4,22 @@
 # Copyright 2020 CorporateHub (https://corporatehub.eu)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
-    "name": "2D matrix for x2many fields",
-    "version": "14.0.1.0.1",
-    "author": (
-        "Therp BV, "
-        "Tecnativa, "
-        "Camptocamp, "
-        "CorporateHub, "
-        "Odoo Community Association (OCA)"
+    'name': '2D matrix for x2many fields',
+    'version': '15.0.1.0.0',
+    'author': (
+        'Therp BV, '
+        'Tecnativa, '
+        'Camptocamp, '
+        'CorporateHub, '
+        'Odoo Community Association (OCA)'
     ),
-    "website": "https://github.com/OCA/web",
-    "license": "AGPL-3",
-    "category": "Hidden/Dependency",
-    "summary": "Show list fields as a matrix",
-    "depends": ["web"],
-    "data": ["views/assets.xml"],
-    "installable": True,
+    'website': 'https://github.com/OCA/web',
+    'license': 'AGPL-3',
+    'category': 'Hidden/Dependency',
+    'summary': 'Show list fields as a matrix',
+    'depends': ['web'],
+    'assets': {
+        'web.assets_backend': ['web_widget_x2many_2d_matrix/static/src/**/*'],
+    },
+    'installable': True,
 }
